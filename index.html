@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Andrej Jurić</title>
+    <link rel="stylesheet" href="./CV.css" />
+    <!-- fontovi -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&family=Open+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Ime, logo itd. -->
+    <section class="about">
+      <div class="main-width">
+        <header>
+          <div class="logo"></div>
+
+          <nav>
+            <div class="hamb">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <!-- navigacija -->
+            <ul class="nav-list">
+              <li><a href="#">Početna</a></li>
+              <li class="show-modal"><a href="#">O meni</a></li>
+              <li class="show-modal2"><a href="#">Hobi</a></li>
+              <li class="show-modal3">
+                <a href="./CV2 container/CV2projektIzbornik.html">Projekti</a>
+              </li>
+              <li class="btn"><a href="#">Kontakt</a></li>
+            </ul>
+          </nav>
+          <!-- na klik skriveno / otkriveno -->
+          <div class="modal hidden">
+            <button class="close-modal">X</button>
+            <h1>O meni</h1>
+            <p>
+              Htio sam napraviti zaokret u karijeri i postati Frontend
+              Developer. Stoga sam upisao program osposobljavanja u Algebri koji
+              mi se pokazao kao pun pogodak.<br /><br />
+              Pored toga što redovito pratim predavanja, kodiram svaki dan
+              samostalno koristeći razne challenge na warrior.js, udemy.com
+              itd.<br /><br />
+              Velika mi je želja zaposliti se u struci jer mi je nevjerojatno da
+              se svaki dan mogu naučiti nove stvari, mogućnosti je beskonačno i
+              nikad nije dosadno.
+            </p>
+          </div>
+          <div class="overlay hidden"></div>
+        </header>
+        <!-- div klasa container - ime, opis -->
+        <div class="container">
+          <div class="about-text">
+            <h3>Bok!</h3>
+            <h1>Moje ime je <span>Andrej Jurić.</span></h1>
+            <p>
+              Trenutno pohađam program osposobljavanja za Frontend developera u
+              Algebri i želja mi je zaposliti se u struci gdje ću imati priliku
+              razvijati se i usavršavati.
+            </p>
+            <div class="social">
+              <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+              <a href="#"><ion-icon name="mail-outline"></ion-icon></a>
+            </div>
+            <button type="button">Više o meni</button>
+          </div>
+          <div class="bottom">
+            <p>&copy; 2023. Andrej Jurić - Sva prava pridržana.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Thank you Jonas Schmedtmann ❤ -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script defer src="./CV.js"></script>
+  </body>
+</html>
