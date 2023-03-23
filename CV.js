@@ -5,11 +5,15 @@ const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".close-modal");
 const btnsShowModal = document.querySelector(".show-modal");
 
-const navToogle = document.querySelector(".nav-toogle");
 const navList = document.querySelector(".nav-list");
+const hamb = document.querySelector(".hamb");
+const lists = document.querySelector(".nav-list li");
 
-navToogle.addEventListener("click", () => {
-  navList.classList.toogle("nav-list--open");
+// funckija hamburger menu
+
+hamb.addEventListener("click", function () {
+  this.classList.toggle("click");
+  navList.classList.toggle("open");
 });
 
 // funkcija otkrivanja

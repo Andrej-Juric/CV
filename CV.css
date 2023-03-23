@@ -44,7 +44,7 @@ nav .hamb {
   right: 3%;
   top: 60px;
   z-index: 5;
-  background: white;
+  background: transparent;
   position: absolute;
   cursor: pointer;
   display: none;
@@ -258,64 +258,60 @@ span {
 /* Smaller screens */
 
 @media only screen and (max-width: 779px) {
+  nav .hamb {
+    display: initial;
+  }
+  .click {
+    top: 46px;
+  }
+  .click span {
+    position: absolute;
+    margin-top: 12px;
+  }
+  .click span:first-child {
+    transform: rotate(-40deg);
+  }
+  .click span:nth-child(2) {
+    opacity: 0;
+    margin: 0;
+  }
+  .click span:last-child {
+    transform: rotate(40deg);
+    top: 0;
+  }
   nav .nav-list {
-    /*display: none;*/
-    /*position: absolute;
-    top: 50px;
-    left: 0;
-    right: 0;
-    background-color: #333;
-    z-index: 999;*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    position: absolute;
+    top: 90px;
+    right: -65%;
+    bottom: 0;
+    width: 60%;
+    height: 50%;
+    background: black;
+    z-index: 2;
+    padding: 6% 9%;
+    transition: 0.3s right;
+    border-radius: 10px;
   }
   nav .nav-list li {
     display: block;
-    text-align: center;
-    margin: 0;
   }
   nav .nav-list li a {
     display: block;
-    padding: 10px;
-    margin: 0;
-    color: #eee;
-    font-size: 14px;
-    font-weight: 600;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 0;
+    margin-bottom: 40px;
   }
   nav .nav-list li.btn a {
-    display: block;
-    margin: 10px auto;
+    position: absolute;
+    bottom: 0%;
+    right: 20%;
+    left: 20%;
+    padding: 7px 15px;
+    font-size: 14px;
   }
-}
-
-/* padajući izbornik */
-
-.nav-list--open {
-  display: block;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  width: 100%;
-  background-color: #333;
-  padding: 10px 0;
-  text-align: center;
-}
-
-.nav-list--open li {
-  display: block;
-  margin: 0;
-}
-
-.nav-list--open li a {
-  display: block;
-  padding: 10px;
-  font-size: 20px;
-  color: #eee;
-  text-decoration: none;
-}
-
-.nav-list--open li a:hover {
-  background-color: #2ecc71;
-  color: #fff;
+  nav .nav-list.open {
+    right: 0;
+  }
 }
