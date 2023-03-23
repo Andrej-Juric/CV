@@ -5,6 +5,13 @@ const overlay = document.querySelector(".overlay");
 const btnCloseModal = document.querySelector(".close-modal");
 const btnsShowModal = document.querySelector(".show-modal");
 
+const navToogle = document.querySelector(".nav-toogle");
+const navList = document.querySelector(".nav-list");
+
+navToogle.addEventListener("click", () => {
+  navList.classList.toogle("nav-list--open");
+});
+
 // funkcija otkrivanja
 const openModal = function () {
   modal.classList.remove("hidden");

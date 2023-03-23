@@ -254,3 +254,68 @@ span {
 .close-modal::after {
   transform: rotate(-45deg);
 }
+
+/* Smaller screens */
+
+@media only screen and (max-width: 779px) {
+  nav .nav-list {
+    /*display: none;*/
+    /*position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    z-index: 999;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  nav .nav-list li {
+    display: block;
+    text-align: center;
+    margin: 0;
+  }
+  nav .nav-list li a {
+    display: block;
+    padding: 10px;
+    margin: 0;
+    color: #eee;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  nav .nav-list li.btn a {
+    display: block;
+    margin: 10px auto;
+  }
+}
+
+/* padajući izbornik */
+
+.nav-list--open {
+  display: block;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  padding: 10px 0;
+  text-align: center;
+}
+
+.nav-list--open li {
+  display: block;
+  margin: 0;
+}
+
+.nav-list--open li a {
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  color: #eee;
+  text-decoration: none;
+}
+
+.nav-list--open li a:hover {
+  background-color: #2ecc71;
+  color: #fff;
+}
